@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--  default  -->
+    <script src="zal-orange/resources/default/jquery-3.7.1.min.js"></script>
+    <link href="zal-orange/resources/default/select2/select2.min.css" rel="stylesheet" />
+    <script src="zal-orange/resources/default/select2/select2.min.js"></script>
+    <script src="zal-orange/resources/default/select2/fa.js"></script>
+    <link href="zal-orange/resources/default/css/select2-custom.css" rel="stylesheet" />
+    <!--  zali-orange theme  -->
+    <link href="zal-orange/style.css" rel="stylesheet" />
+    <title>search</title>
+</head>
+
+<body>
+    <br/>
+    <br/>
+
+    <div>
+        <select id="js-data-ajax" style="width: 100%;" class="js-example-placeholder-single form-control" name="query" autofocus required>
+<!--        <option value='{{query}}' selected>{{query}}</option>-->
+        </select>
+    </div>
+    
+    <script>
+        var data = [
+            {
+                id: 0,
+                text: 'دانایی و توانایی',
+                //image: 'https://ircdn.zhaket.com/resources/5dc9a263eaec3700091ff655/6481b9961071c1f90b062484.png',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkcfK641vWnGsesmvmpS8SInnq5YPC905RrQ&usqp=CAU',
+                class: 'conceptual_suggest',
+            },
+            {
+                id: 1,
+                text: 'امید و دانش',
+                //image: 'https://ircdn.zhaket.com/resources/5dc9b4a4eaec370009200c45/64537b43b7a8d81fbd09a9f2.png',
+                image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCjbCiqJZYN3qWJ77q1oEETa4xyTFVsfDjaA&usqp=CAUQ',
+                class: 'conceptual_suggest'
+            },
+            {
+                id: 2,
+                text: 'دستاوردها و توانمندی ها',
+                class: 'conceptual_suggest',
+            },
+            {
+                id: 3,
+                text: 'علم و دین',
+                //image: 'https://ircdn.zhaket.com/resources/5dc9a18beaec3700091ff53b/64802bdcc626792b86097be8.png',
+                image: 'data:image/png;base64,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',
+                class: 'conceptual_suggest',
+            },
+            {
+                id: 4,
+                text: 'دانش و پژوهش',
+                class: 'conceptual_suggest',
+            },
+            {
+                id: 5,
+                text: 'علم و فناوری',
+                class: 'conceptual_suggest',
+            },
+
+
+        ];
+        function formatSuggestion (item) {
+          if (!item.image) {
+            var glassUrl = 'zal-orange/resources/images/null.png';
+            var $item = $(
+            '<span class="content_result ' + item.class +'"><img src="' + glassUrl + '" class="avatar_result" /> ' + item.text + '</span>'
+            );
+            return $item;
+          }
+          // var baseUrl = "/user/pages/images/flags";
+          // var $item = $(
+          //   '<span><img src="' + baseUrl + '/' + item.element.value.toLowerCase() + '.png" class="img-flag" /> ' + item.text + '</span>'
+          // );
+
+          var $item = $(
+            '<div> <span class="content_result ' + item.class +'"><img src="' + item.image + '" class="avatar_result" /> <span class="text_image">' + item.text + '</span></span></div>'
+          );
+          return $item;
+        };
+
+        $(document).ready(function() {
+            $('#js-data-ajax').select2({
+                theme: "zal-orange",
+                dir: "rtl",
+                language: 'fa',
+                placeholder: 'جستجو به هفتاد زبان رایج دنیا ...',
+                //placeholder: '<a href="https://www.sharifsearch.ir" target="_blank"><img src="zal-orange/resources/images/sharif_logo.svg" style="height:20px; opacity:50%; padding-left: 5px;"/></a> جستجو به هفتاد زبان رایج دنیا ...',
+                //escapeMarkup: function(markup){ return markup; },
+                //allowClear: true,
+                // tags: true,
+
+                templateResult: formatSuggestion,
+                data: data,
+            });
+        });
+
+    </script>
+    <script src="zal-orange/script.js"></script>
+</body>
+</html>
