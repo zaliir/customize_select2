@@ -49,6 +49,8 @@
 * 🔷 change position icon search and logo for responsive
 * 🔷 change opacity logo
 * 🔷 mirror icons for upper quality
+* 🔷 change padding text searchbox
+* 🔷 [select2-zali*.html] formatSuggestion updated.
 
 ## Fixed
 

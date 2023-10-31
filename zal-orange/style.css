@@ -30,7 +30,7 @@ body{
   /*change direction to rtl and text-align to right */
 html[dir="rtl"] .select2-container--zal-orange .select2-selection--single .select2-selection__rendered {
   text-align: right;
-  padding: 1.38em 4em 1.38em 0 !important;
+  padding: 1.38em 5em 1.38em 0 !important;
   direction: rtl;}
 
 .select2-container--zal-orange .select2-selection--single .select2-selection__clear {
