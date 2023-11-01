@@ -23,7 +23,7 @@
 * 🎈 [script.js]: link added to magnifier
 * 🎈 add drowpdown list for sharifsearch.ir
 * 🎈 add hover for logo
-* 
+* 🎈 [style.css] dropdown result no_image size and rtl mirroring updated.
 
 ## Changed
 
