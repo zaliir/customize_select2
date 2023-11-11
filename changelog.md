@@ -24,6 +24,11 @@
 * 🎈 add drowpdown list for sharifsearch.ir
 * 🎈 add hover for logo
 * 🎈 [style.css] dropdown result no_image size and rtl mirroring updated.
+* 🎈 add for icon search in result box-sizing
+* 🎈 add padding for a text-box field
+* 🎈 border-radius for tumbnail_image
+* 🎈 [.select2-container--google .select2-dropdown--above] shadow and border-radius to searrch-box in dropdown--above
+* 🎈 [.select2-container--google.select2-container--above .select2-selection] border-radius in dropdown--above 
 
 ## Changed
 
@@ -51,6 +56,13 @@
 * 🔷 mirror icons for upper quality
 * 🔷 change padding text searchbox
 * 🔷 [select2-zali*.html] formatSuggestion updated.
+* 🔷 change height and padding in text box
+* 🔷 change padding avatar
+* 🔷 .sharif_form: max-width (50em) added. (buttons included)
+* 🔷 CHANGE max-height in content result and padding in avatar
+* 🔷 [select2-google*.html] formatSuggestion(): `text_image` class removed.
+* 🔷 [style.css] .avatar_result class: padding changed to margin to resolve small thumbnails issue.
+* 🔷 [style.css] .select2-results__options: max-height reduced from 530, @media 410 to 400, @media 300
 
 ## Fixed
 
